@@ -40,7 +40,7 @@ afterEvaluate {
             release(MavenPublication) {
                 from components.release
                 groupId = 'com.jjoe64.graphview'
-                artifactId = 'android-example'
+                artifactId = 'Graphview'
                 version = '4.2.3'
             }
         }
