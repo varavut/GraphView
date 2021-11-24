@@ -12,6 +12,9 @@ buildscript {
 apply plugin: 'com.android.library'
 apply plugin: 'maven-publish'
 
+group = 'com.github.varavut'
+version = '4.2.3'
+
 android {
     compileSdkVersion 31
     buildToolsVersion '31.0.0'
@@ -39,7 +42,7 @@ afterEvaluate {
             // Creates a Maven publication called "release".
             release(MavenPublication) {
                 from components.release
-                groupId = 'com.jjoe64.graphview'
+                groupId = 'com.github.varavut'
                 artifactId = 'graphview'
                 version = '4.2.3'
             }
